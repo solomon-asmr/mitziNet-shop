@@ -1,0 +1,93 @@
+/* 
+שמואל למלם תז 209487594
+סלמון קסהון תז 346254824 
+ */
+
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #e8eaf6; /* Light beige background, not white */
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+form {
+    width: 50%; /* More focused form width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #6a5acd, #8968cd); /* Gradient background from slate blue to lighter purple */
+    padding: 20px;
+    border: 2px solid #8a2be2; /* Purple border to match the gradient */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow around the form */
+    border-radius: 10px; /* Rounded corners for the form */
+}
+
+input, button {
+    padding: 10px;
+    margin: 10px 0;
+    width: 90%; /* Consistent width for all form elements */
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.name-field {
+    display: flex;
+    justify-content: space-between; /*to make the name fields align horizontally */
+    
+}
+
+input[type="text"] {
+    width: 48%; /* Adjust width to fit side by side in name-field container */
+}
+
+input:hover, button:hover {
+    border: 1px solid orange;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+footer {
+    width: 100%;
+    padding: 20px;
+    background-color: #6a5acd; /* Matching the gradient colors */
+    color: white;
+    text-align: center;
+    border-top: 2px solid #8a2be2;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #ffd700; /* A golden color for links to stand out */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 425px) {
+    form {
+        width: 90%; /* Increase width to 90% for smaller screens */
+    }
+}
